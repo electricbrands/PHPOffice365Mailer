@@ -1,4 +1,4 @@
-# PHPOffice365Mailer
+# PHPOffice365mailer
 Send emails via Office365 using MS Graph API
 
 ## Installation
