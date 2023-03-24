@@ -18,7 +18,7 @@ $_ENV["MS_CLIENT_SECRET"] = "Enter your client secret";
 $mail = new PhpOffice365mailer();
 
 # View JWT Informations
-# $mailer->tokenInfo();
+# $mail->tokenInfo();
 
 # Send Mail
 $mail->setFrom('from@example.com', 'Mailer');
