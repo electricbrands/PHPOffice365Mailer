@@ -25,7 +25,7 @@ MS_CLIENT_SECRET="your client secret"
 use Electricbrands\PhpOffice365mailer\PhpOffice365mailer;
 # use \Dotenv\Dotenv;
 
-require( __DIR__ . '/../vendor/autoload.php' );
+require( __DIR__ . '/vendor/autoload.php' );
 
 /* if you are using dotenv
 $dotenv = Dotenv::createImmutable( __DIR__ . '/..' );
