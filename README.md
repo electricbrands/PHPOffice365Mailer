@@ -28,7 +28,7 @@ use Electricbrands\PhpOffice365mailer\PhpOffice365mailer;
 require( __DIR__ . '/vendor/autoload.php' );
 
 /* if you are using dotenv
-$dotenv = Dotenv::createImmutable( __DIR__ . '/..' );
+$dotenv = Dotenv::createImmutable( __DIR__ );
 $dotenv->load();
  */
 
