@@ -1,7 +1,7 @@
 {
     "name": "electricbrands/php-office365mailer",
     "description": "Send emails via Office365 using MS Graph API",
-    "license": "GPL 2.0",
+    "license": "GPL-2.0-or-later",
     "autoload": {
         "psr-4": {
             "Electricbrands\\PhpOffice365mailer\\": "src/"
