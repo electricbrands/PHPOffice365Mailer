@@ -1,0 +1,19 @@
+{
+    "name": "electricbrands/php-office365mailer",
+    "description": "Send emails via Office365 using MS Graph API",
+    "license": "GPL 2.0",
+    "autoload": {
+        "psr-4": {
+            "Electricbrands\\PhpOffice365mailer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Stefan Lau",
+            "email": "stefan.lau@electricbrands.de"
+        }
+    ],
+    "require-dev": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}
