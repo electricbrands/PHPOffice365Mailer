@@ -11,7 +11,7 @@ composer require electricbrands/php-office365mailer
 
 3. dotenv vars:
 ```php
-MS_TENANT_ID="your tenant id"
+MS_TENANT_ID="your tenant id" 
 MS_CLIENT_ID="your client id" 
 MS_CLIENT_SECRET="your client secret"
 ```
