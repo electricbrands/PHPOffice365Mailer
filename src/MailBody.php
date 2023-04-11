@@ -44,29 +44,29 @@ class MailBody
 
         }
         
-        if( is_array( $this->replyTo[0] ) ){
+        if( $this->checkArray( $this->replyTo[0] ) ){
 
             $this->requestJsonBody["message"]["replyTo"] = $this->replyTo;
 
         }
 
-        if( is_array( $this->toRecipients[0] ) ){
+        if( $this->checkArray( $this->toRecipients[0] ) ){
 
             $this->requestJsonBody["message"]["toRecipients"] = $this->toRecipients;
 
-            if( is_array( $this->ccRecipients[0] ) ){
+            if( $this->checkArray( $this->ccRecipients[0] ) ){
 
                 $this->requestJsonBody["message"]["ccRecipients"] = $this->ccRecipients;
 
             }
 
-            if( is_array( $this->bccRecipients[0] ) ){
+            if( $this->checkArray( $this->bccRecipients[0] ) ){
 
                 $this->requestJsonBody["message"]["bccRecipients"] = $this->bccRecipients;
 
             }
 
-            if( is_array( $this->attachments[0] ) ){
+            if( $this->checkArray( $this->attachments[0] ) ){
 
                 $this->requestJsonBody["message"]["attachments"] = $this->attachments;
 
@@ -91,6 +91,19 @@ class MailBody
             trigger_error("PhpOffice365mailer Error: Mail recipient is missing!", E_USER_NOTICE);
 
         }
+
+    }
+
+    private function checkArray( &$givenArray ) : bool 
+    {
+
+        if( !empty( $givenArray ) && is_array( $givenArray ) ){
+
+            return true;
+
+        }
+
+        return false;
 
     }
 
